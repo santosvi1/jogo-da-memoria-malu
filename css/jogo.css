@@ -1,8 +1,7 @@
 body{
     background-image: url('../fotosMalu/bg-unicornio.jpg');
     background-size: cover;
-    background-repeat:no-repeat;
-    height: 100vh;
+    background-repeat:no-repeat; 
     
 }
 
@@ -47,7 +46,7 @@ main{
 
 .card {
     aspect-ratio: 2 / 2;
-    width:79%;
+    width:80%;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
@@ -95,7 +94,7 @@ main{
     }
 
     .card {
-        width: 70%;
+        width: 90%;
     }
 
 
