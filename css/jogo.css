@@ -1,0 +1,101 @@
+body{
+    background-image: url('../fotosMalu/bg-unicornio.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+    margin: 20px auto;
+}
+
+.placar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    max-width: 800px;
+    flex-direction: column;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(80px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    
+    
+}
+
+.placar h3 {
+    margin-bottom: 10px;
+}
+
+.pontos{
+    margin-bottom:10px;
+}
+
+.card {
+    aspect-ratio: 2 / 2;
+    width:79%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    
+    background-position:top center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.front {
+    transform: rotateY(180deg);
+    background-position: top -50%;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    
+
+}
+
+.back {
+    background-image: url('../fotosMalu/malu-backface.jpeg');
+    backface-visibility: hidden;
+}
+
+.revealCard{
+    transform: rotateY(180deg);
+}
+
+.disable-card{
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+
+@media(max-width: 600px){
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        width: 70%;
+    }
+
+
+        
+}
