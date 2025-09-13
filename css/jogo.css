@@ -45,7 +45,7 @@ main{
 
 .card {
     aspect-ratio: 2 / 2;
-    width:79%;
+    width:85%;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
