@@ -17,7 +17,7 @@ formJogo.addEventListener('submit', (e)=>{
 
     localStorage.setItem('usuario', nome);
 
-    window.location.href = 'paginas/jogo.html'
+    window.location.href = './paginas/jogo.html'
 
 
     
