@@ -70,7 +70,8 @@ const createCard = (foto) => {
     const front = createTag('div', 'face front');
     const back = createTag('div', 'face back');
 
-    front.style.backgroundImage = `url('../fotosMalu/${foto}.jpeg')`
+    front.style.backgroundImage = `url('./fotosMalu/${foto}.jpeg')`
+
 
     card.appendChild(front)
     card.appendChild(back)
@@ -109,7 +110,8 @@ function embaralhar(array){
 
 
 
-const audioMalu = new Audio('../audiosMalu/achoMalu.mpeg')
+const audioMalu = new Audio('./audiosMalu/achoMalu.mpeg')
+
 
 function audioAcho(){
     audioMalu.play()
